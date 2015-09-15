@@ -1,4 +1,7 @@
  export default function shallowEqual(objA, objB) {
+  // hack
+   return angular.equals(objA, objB);
+
    if (objA === objB) {
      return true;
    }
